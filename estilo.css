@@ -391,15 +391,19 @@ main section .sectionBanner2 button:hover{
     
 }
 main .productos2 img{
-    width: 33vh;
+    width: 59vh;
     height: 450px;
-    position: relative;
+    position: absolute;
     border: solid ;
     top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
 
 }
-main article{
-    width: 33vh;
+main .productos2 article{
+    width: 60vh;
     height: 700px;
     justify-content: space-around;
     align-items: center;
@@ -410,9 +414,14 @@ main article{
 
 }
 main .productos2 h2{
-    display: flex;
+    display:flex;
+    position: relative;
     top: 50px;
     left: 130px;
-    position: relative;
     font-size: 40px;
+    width: 56vh;
+}
+main .productos2 h4{
+    display:flex;
+    position: relative;
 }
