@@ -419,7 +419,7 @@ main .productos2 h2{
     top: 50px;
     left: 130px;
     font-size: 40px;
-    width: 56vh;
+    width: 100vh;
 }
 main .productos2 h4{
     display:flex;
