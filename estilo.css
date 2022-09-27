@@ -1,0 +1,418 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#eb5757;
+    --second-color:#222;
+    --light-color:#f9f9f9;
+    --gera-color:#333;
+}
+header{
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+
+}
+header .covid{   
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    background-color:var(--second-color);
+    order: 1;
+}
+header .covid button{
+    position: relative;
+    width: 155px;
+    height: 35px;
+    border-radius: 21px;
+    left: -8px;
+    font-size: 95%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    float: left;
+    letter-spacing: 1px;
+
+
+
+}
+header .covid p{
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    left: -8px;
+    
+}
+header .menu{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--light-color);
+    padding-left: 180px;
+    order: 1;
+    
+
+}
+
+header .menu div{
+    display: flex;
+    gap: 15px;
+    width: 600px;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--light-color);
+    left: 2px;
+}
+header .menu span{
+    position: relative;
+    display: flex;
+    left: -320px; 
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 85%;
+}
+header .menu img{
+    position: relative;
+    display: flex;
+    width: 45px;
+    height: 35px;
+    left: -170px;
+}
+header .menu div a{
+    position: relative;
+    height: 35px;
+    width: 75px;
+    padding-top: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    transition:  all 0.8s ease;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 95%;
+
+
+}
+
+header .menu div button{
+    position: relative;
+    left: -20px;
+    width: 30px;
+    height: 15px;
+    border: none;
+    background-color: var(--second-color);
+    color: var(--light-color);
+    border-radius: 18px;
+    top: -4px;
+
+}
+
+header .menu button span{
+    position: relative;
+    left: 40px;
+    top: -12px;
+    width: 18px;
+    height: 18px;
+    border-radius:15PX;
+    color: var(--second-color);
+    justify-content: center;
+    background-color: var(--light-color);
+    font-size: smaller;
+    align-items: center;
+    order: 1;
+}
+header .menu div a:hover{
+    background-color: var(--second-color);
+}
+header .menu div button{
+    width: 55px;
+    height: 32px;
+    border-radius: 5px; /*ESTO ES PARA QUE SE CREE LA CURBA DE NUESTRO CIRCULO, REDONDEA EL BOTON */
+    background-image: url("carrito1.0.PNG");
+    background-color: black;
+    background-repeat: no-repeat, repeat;
+    position: relative;
+    background-position:center;
+    background-size: 60%; /* ESTO ES PARA QUE SE AJUSTE EL TAMAÑO DE LA IMAGEN DE ACUERDO AL TAMAÑO DEL BOTON */
+    justify-content: center;
+
+}
+main section .sectionBanner{
+    width: 100%;
+    height: 680px;
+    background-image: url("73486.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; /* ESTO ES PARA QUE SE AJUSTE EL TAMAÑO DE LA IMAGEN DE ACUERDO AL TAMAÑO DEL BOTON */
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main section .sectionBanner h1{
+    position: absolute;
+    display: flex;
+    top: 280px; /* parte superior */
+    left: 87px; /* parte lateral */
+    font-size: 62px;
+    color: var(--light-color);
+    font-weight: bolder;
+}
+main section .sectionBanner p{
+    position: absolute;
+    display: flex;
+    color: var(--light-color);
+    top: 420px;
+    width: 40%;
+    font-size: 105%;
+    left: 90px;
+
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+main section .sectionBanner button{
+    position: relative;
+    width: 155px;
+    height: 35px;
+    border-radius: 5px;
+    top:  220px;
+    font-size: 95%;
+    border: solid;
+    background-color: rgba(0,0,0,0);
+    color: var(--light-color);
+    letter-spacing: 1px;
+    left: 90px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+main section .sectionBanner button:hover{
+    background-color: var(--light-color);
+    color: var(--second-color);
+    border: none;
+    
+}
+main section .section2{
+    width: 100vh;
+    height: 150px;
+    left: 90px;
+    top: 60px;
+    display: flex;
+    position: relative;
+}
+main .section2 .tittleSection{
+    display: block;
+    width: 90vh;
+    height: 200px;
+    font-size: 40px;
+    line-height: 1.2;
+    top: 20px;
+    position: absolute;
+    color: var(--gera-color);
+    font-weight: bolder;
+
+}
+main .section2 .section2textoD{
+    display: flex;
+    width: 90vh;
+    position: relative;
+    justify-content: center;
+    left: 78%;
+    top:-7px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+main .section2 p span{
+    display: flex;
+    position: relative;
+    width: 27vh;
+}
+main .sectionArt{
+    width: 100vh;
+    height: 700px;
+    left: 90px;
+    top: 60px;
+    display: flex;
+    position: relative;
+    gap: 55px;
+    top: 25px;
+}
+
+main .sectionArt .art1{
+    width: 56vh;
+    height: 348px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url("circulo.png");
+    background-repeat: no-repeat,repeat;
+    background-size: 40%;
+    background-position: 130% 130%;
+    background-color: var(--second-color);
+    border-radius: 5px;
+}
+main .sectionArt .art2{
+    width: 56vh;
+    height: 348px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url("triangulo.webp");
+    background-repeat: no-repeat,repeat;
+    background-size: 55%;
+    background-position: 125% 132%;
+    background-color: var(--second-color);
+}
+main .sectionArt .art3{
+    width: 56vh;
+    height: 348px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url("cuadrado.png");
+    background-repeat: no-repeat,repeat;
+    background-size: 40%;
+    background-position: 130% 130%;
+    background-color: var(--second-color);
+    
+}
+
+main .sectionArt div h3{
+    display: flex;
+    position: relative;
+    top: 105px;
+}
+
+main .sectionArt span,h3{
+    color: var(--light-color);
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100vh;
+    height: 150px;
+    top: 40px;
+    left: -10px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+main .sectionArt p{
+    display: flex;
+    position: relative;
+    line-height: 1.5;
+    top: 40px;
+    letter-spacing: 1px;
+    font-size: 95%;
+}
+
+main section .sectionBanner2{
+    width: 100%;
+    height: 680px;
+    background-image: url("banner2.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; /* ESTO ES PARA QUE SE AJUSTE EL TAMAÑO DE LA IMAGEN DE ACUERDO AL TAMAÑO DEL BOTON */
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float:right;
+}
+main section .sectionBanner2 h2{
+    position: relative;
+    width: 85vh;
+    height: 200px;
+    display: flex;
+    font-size: 40px;
+    color: var(--light-color);
+    font-weight: bolder;
+    float:right;
+    justify-content: center;
+    align-items: center;
+    text-align:right;
+    top: -140px;
+    left: 725px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+
+}
+main section .sectionBanner2 p{
+    position: relative;
+    display: flex;
+    color: var(--light-color);
+    font-size: 105%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align:right;
+    justify-content: center;
+    align-items: center;
+    float:right;
+    top: -20px;
+    left: 225px;
+    line-height: 1.5;
+
+
+    
+}
+main section .sectionBanner2 button{
+    position: relative;
+    display: flex;
+    width: 210px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 96%;
+    border: none;
+    background-color: var(--light-color);
+    color: var(--second-color);
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    float:right;
+    top: 50px;
+    left: -100px;
+    transition: border-color 300ms ease, background-color 300ms ease;
+}
+main section .sectionBanner2 button:hover{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    
+}
+main .productos2 img{
+    width: 33vh;
+    height: 450px;
+    position: relative;
+    border: solid ;
+    top: 100px;
+
+}
+main article{
+    width: 33vh;
+    height: 700px;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+}
+main .productos2 h2{
+    display: flex;
+    top: 50px;
+    left: 130px;
+    position: relative;
+    font-size: 40px;
+}
