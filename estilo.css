@@ -18,6 +18,16 @@ header{
     z-index: 1;
 
 }
+body{
+    overflow-x: hidden;
+}
+
+/* header:first-child{
+    flex: 2;
+    width: 100%;
+    height: 100px;
+    
+} */
 header .covid{   
     width: 100%;
     height: 75px;
@@ -29,6 +39,11 @@ header .covid{
     background-color:var(--second-color);
     order: 1;
 }
+/* header .covid:first-child{
+    flex: 2;
+    width: 100%;
+    height: 50px;
+} */
 header .covid button{
     position: relative;
     width: 155px;
@@ -60,10 +75,16 @@ header .menu{
     align-items: center;
     color: var(--light-color);
     padding-left: 180px;
-    order: 1;
-    
 
 }
+/* header .menu:first-child{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--light-color);
+} */
 
 header .menu div{
     display: flex;
@@ -90,6 +111,12 @@ header .menu img{
     height: 35px;
     left: -170px;
 }
+/* header.menu img:first-child{
+    flex: 2;
+    display: flex;
+    position: relative;
+    top: -50px;
+} */
 header .menu div a{
     position: relative;
     height: 35px;
@@ -106,11 +133,16 @@ header .menu div a{
 
 
 }
+/* header .menu div:first-child{
+    height: 40px;
+    border-radius: 5px;
+    top: -50    px;
+} */
 
 header .menu div button{
     position: relative;
     left: -20px;
-    width: 30px;
+    width: 45px;
     height: 15px;
     border: none;
     background-color: var(--second-color);
@@ -150,9 +182,20 @@ header .menu div button{
     justify-content: center;
 
 }
+/* main section .sectionBanner:first-child{
+    background-color: black;
+    background-repeat: no-repeat, repeat;
+    position: relative;
+    width: 412px;
+    height: 350px;
+}
+main .section1{
+    width: 412px;
+
+} */
 main section .sectionBanner{
-    width: 100%;
-    height: 680px;
+    width: 100vw;
+    height: 100vh;
     background-image: url("73486.jpg");
     background-repeat: no-repeat;
     background-position:center;
@@ -176,13 +219,13 @@ main section .sectionBanner p{
     position: absolute;
     display: flex;
     color: var(--light-color);
-    top: 420px;
-    width: 40%;
+    top: 70%;
+    width: 30%;
+    height: 18%;
     font-size: 105%;
     left: 90px;
-
-    letter-spacing: 1px;
-    line-height: 1.5;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
 }
 main section .sectionBanner button{
     position: relative;
@@ -241,10 +284,9 @@ main .section2 p span{
     width: 27vh;
 }
 main .sectionArt{
-    width: 100vh;
-    height: 700px;
+    width: 100vw;
+    height: 90vh;
     left: 90px;
-    top: 60px;
     display: flex;
     position: relative;
     gap: 55px;
@@ -252,7 +294,7 @@ main .sectionArt{
 }
 
 main .sectionArt .art1{
-    width: 56vh;
+    width: 40vh;
     height: 348px;
     display: flex;
     position: relative;
@@ -265,7 +307,7 @@ main .sectionArt .art1{
     border-radius: 5px;
 }
 main .sectionArt .art2{
-    width: 56vh;
+    width: 40vh;
     height: 348px;
     display: flex;
     position: relative;
@@ -277,7 +319,7 @@ main .sectionArt .art2{
     background-color: var(--second-color);
 }
 main .sectionArt .art3{
-    width: 56vh;
+    width: 40vh;
     height: 348px;
     display: flex;
     position: relative;
@@ -359,8 +401,9 @@ main section .sectionBanner2 p{
     justify-content: center;
     align-items: center;
     float:right;
+    width: 30vw;
     top: -20px;
-    left: 225px;
+    left: 210px;
     line-height: 1.5;
 
 
@@ -390,20 +433,20 @@ main section .sectionBanner2 button:hover{
     color: var(--light-color);
     
 }
-main .productos2 img{
-    width: 59vh;
-    height: 450px;
-    position: absolute;
-    border: solid ;
+
+main .productos2 article img{
+    width: 80%;
+    height: 500px;
+    position: relative;
     top: 100px;
-    justify-content: space-around;
     align-items: center;
     justify-content: center;
     display: inline-block;
 
-}
+
+} 
 main .productos2 article{
-    width: 60vh;
+    width: 31vw;
     height: 700px;
     justify-content: space-around;
     align-items: center;
@@ -411,17 +454,595 @@ main .productos2 article{
     display: inline-block;
     text-align: center;
     position: relative;
+}
+main .productos2 p .Texth2{
+    font-size: 40px;
+    width: 30vw;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    color: var(--gera-color);
+    top: 20px;
+}
+main .productos2 article h4{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    color: var(--gera-color);
+}
+main .productos2 article p{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 35px;
+    font-size: small;
+    font-weight: bold;
 
 }
-main .productos2 h2{
+main .productos2 .texto span{
     display:flex;
     position: relative;
     top: 50px;
     left: 130px;
-    font-size: 40px;
-    width: 100vh;
+    width: 40vw;
+    height: 50px;
+
 }
-main .productos2 h4{
-    display:flex;
+main .productos2 article button{
+    display: inline-block;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    color:var(--light-color);
+    background-color: var(--primary-color);
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    align-content: space-between;
+    top: 50px;
+}
+main .productos2 article span button{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    top:200px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    letter-spacing: 1.2px;
+}
+
+main .productos2 .dibutton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    color:var(--light-color);
+    background-color: var(--second-color);
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    top: 50%;
+    left: 41%;
+    letter-spacing: 1.5px;
+}
+
+main .sectionfinal{
+    width: 68vw;
+    height: 95vh;
+    background-color: var(--gera-color);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 50px;
+    left: 24vw;
+    border-radius: 10px;
+}
+main .sectionfinal p{
+    width: 28vw;
+    font-size: 90%;
+    top: 30px;
+    left: 80px;
+    color: var(--light-color);
+    letter-spacing: 1px;
+    line-height: 1.8;
+    justify-content: center;
+    text-align: justify;
+    position: relative;
+}
+main .sectionfinal img{
+    width: 26vw;
+    height: 35vw;
+    display: flex;
+    position: absolute;
+    left: -200px;
+    top: 42px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+main .sectionfinal h2{
+    color: var(--light-color);
+    width: 20vw;
+    height: 10vh;
+    top: 30px;
+    left: 80px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    justify-content: center;
+    position: relative;
+}
+footer{
+    width: 98.5vw;
+    height: 180px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gera-color);
+}
+footer span{
+    display: flex;
+    color: var(--light-color);
+
+}
+footer p{
+    font-size: 70%;
+    top: 140px;
+    left: 41%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    color: var(--light-color);
+    letter-spacing: 1.5px;
+}
+footer a{
+    color: var(--primary-color);
+}
+@media screen and (max-width: 412px){
+    header .covid{
+        height: 100px;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+    header{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 13%;
+    }
+
+    header .covid button{
+        width: 28%;
+        height: 35%;
+        top: 8px;
+        left: 35%;
+        border-radius: 4px;
+        font-size: small;
+    }
+    header .covid p{
+        width: 100%;
+        height: 50px;
+        top:30px;
+        left: -65px;
+        font-size: smaller;
+        text-align: center;
+    }
+    header .covid{
+        width: 100vw;
+        height: 46%;
+    }
+    header .menu div{
+        position: relative;
+        width: 80%;
+        left: -100px;
+        gap: 3;
+    }
+    header .menu div a{
+        top: 15px;
+        gap: 8px;
+        font-size: smaller;
+    }
+    header .menu img{
+        position: relative;
+        top: 15px;
+        left: -135px;
+    }
+    header .menu span{
+        top: -10px;
+        left: -180px;
+        letter-spacing: 1.5px;
+        font-size: small;
+        text-align: center;
+        position: relative;
+    }
+    header .menu{
+        width: 95%;
+        height: 30%;
+        position: relative;
+        display: flex;
+    }
+    header .menu div button{
+        position: relative;
+        top: 15px;
+        left: 0;
+        width: 115%;
+        height: 80%;
+        border-radius: 3px;
+        background-size: 100%;
+    }
+    header .menu div button span{
+        left: 65%;
+        scale: 80%;
+        font-size: 120%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+    }
+    main .section1{
+        width: 100vw;
+        display: flex;
+    }
+    main .section1 .sectionBanner{
+        display: flex;
+        position: relative;
+        width: 412px;
+        height: 40vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: top;
+
+    }
+    main .section1 .sectionBanner h1{
+        font-size: 15px;
+        top: 5%;
+        left: 22%;
+        width: 120%;
+        scale: 200%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    main .section1 .sectionBanner p{
+        font-size: 1px;
+        letter-spacing: 1.2;
+        line-height: 1.5;
+        top: 30%;
+        left: -25%;
+        width: 100%;
+        scale: 180%;
+        justify-content: center;
+        position: relative;
+        font-size: 50%;
+        text-align:start;
+    }
+    main .section1 .sectionBanner br{
+
+        display: none;
+
+    }
+    .sectionBanner{
+        width: 100%;
+        height: 30%;
+    }
+    html,body{
+        overflow-x: hidden; 
+        height:100%; 
+; 
+    }
+    main .section2 p{
+        width: 100%;
+        height: 10%;
+        top: 100%;
+        left:40%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: end;
+        font-size: 80%;
+    }
+    main .section2 h3.tittleSection{
+        position: absolute;
+        display: block;
+        top:150%;
+        left: -10%;
+        font-size: 20px;
+        width: 80vw;
+        height: 5vh;
+        align-items: center;
+        justify-content: center;
+        text-align: end;
+    }
+    main div.section2{
+        width: 100vw;
+        height: 3vh;
+        top: 15%;
+        position: relative;
+        display: flex;
+    }
+    main .sectionArt{
+        width: 100vw;
+        height: 120vh;
+        top: -100%;
+        left: -8%;
+        float:inline-start;
+        position: relative;
+        display: flow-root;
+        justify-content: center;
+        align-items: center;
+
+    }
+    main .sectionArt article{
+        width: 100vw;
+        height: 32%;
+    }
+
+    main .sectionArt div{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        scale: 68%;
+        left: -5%;
+        
+    }
+    main .sectionArt p{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: inline-block;
+        top:-15%;
+        left: 18%;
+        text-align: center;
+        font-weight:bold;
+        letter-spacing: 1px;
+    }
+    main .sectionArt .art1{
+        background-position: 7% 45%;
+        background-color: var(--gera-color);    
+    }
+    main .sectionArt .art2{
+        background-position: 3% 38%;
+        background-size: 45%; 
+        background-color: var(--gera-color); 
+
+    }
+    main .sectionArt .art3{
+        background-position: 3% 38%;
+        background-size: 45%;  
+        background-color: var(--gera-color);  
+    }
+    main .sectionArt div h3{
+        top: 10%;
+        left: 5%;
+    }
+    main .sectionArt .art2 h3{
+        left: -0%;
+    }
+    main section .sectionBanner2{
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 25vh;
+        top:0%;
+        left: 0%;
+    }
+    main section .sectionBanner2 p{
+        position: relative;
+        display: block;
+        left: 10%;
+        top: 0%;
+        font-size: 12px;
+        width: 80vw;
+        float: left;
+        align-items:center ;
+        text-align: center;
+        justify-content: center;
+    }
+    main section .sectionBanner2 h2{
+        position: relative;
+        display: flex;
+        top: 0%;
+        left: 10%;
+        width: 80vw;
+        height: 10vh;
+        font-size: 25px;
+        justify-content: center;
+        float:none;
+        text-align: center;
+        align-items: center;
+    }
+    main section .sectionBanner2 button{
+        position: relative;
+        display: flex;
+        top: 10%;
+        left: -20%;
+        float:right;
+        align-items: center;
+        width: 60vw;
+        height: 3vh;
+    }
+    
+    main section .texto{
+        position: relative;
+        display: flex;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 10vh;
+    }
+    section.productos2{
+        width: 100vw;
+        height: 160vh;
+    }
+    main .productos2 .texto span{
+        display: flex;
+        position: relative;
+        TOP: 20%;
+        left: 5%;
+        align-items: center;
+    }  
+    main .productos2 p .Texth2{
+        display: flex;
+        position: relative;
+        font-size: 29px;
+        width: 70vw;
+        height: 6vh;
+        top: 15%;
+        left: 0%;
+        align-items: center;
+        justify-content: center;
+        text-decoration-line: underline;
+        text-decoration-style:double;
+        text-decoration-color: var(--primary-color);
+    }
+    main .productos2 article{
+        width: 80vw;
+        height: 36vh;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 10%;
+        float: inline-start;
+    }
+    main .productos2 article img{
+        width: 100%;
+        height: 25vh;
+        top: 0%;
+        left: 0%;
+    }
+    main .productos2 article.tercerart{
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+        left: 10%;
+    }
+    main .productos2 article h4{
+        width: 45vw;
+        height: 2vh;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+        left: 22%;
+    }
+    main .productos2 article p{
+        width: 45vw;
+        height: 2vh;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 2%;
+        left: 22%;
+    }
+    main .productos2 article p span{
+        text-decoration-line: line-through;
+        text-decoration-color: var(--primary-color);
+    }
+    main .productos2 article button{
+        width: 20vw;
+        height: 2vh;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 7%;
+        left: 0%;
+    }
+
+    main .productos2 .dibutton button{
+        width: 80vw;
+        height: 4vh;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+        left: 10%;
+        font-size: 20px;
+    }
+    main .productos2 article span button{
+        width: 20vw;
+        height: 2vh;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        top: -65%;
+        left: 0%;
+    }
+    main .sectionfinal{
+        width: 100vw;
+        height: 60vh;
+        top: 0%;
+        left: 0%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    main .sectionfinal div{
+        width: 100vw;
+        height: 70vh;
+        top: 0%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    main .sectionfinal img{
+        width: 100%;
+        height: 15vh;
+        top: -22%;
+        left: 24%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .sectionfinal p{
+        width: 70vw;
+        height: 50vh;
+        top: 10%;
+        left: -30%;
+        font-size: 2px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        letter-spacing: .5px;
+        scale: 550%;
+    }
+    main .sectionfinal h2{
+        width: 100vw;
+        height: 10vh;
+        top: -37%;
+        left: -15%;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
